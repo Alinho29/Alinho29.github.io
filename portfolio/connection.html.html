@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(12, 123, 197);
+}
+
+h1 {
+  color: rgb(139, 7, 7);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Hartelijk welkom!</h1>
+<p>Hello Smarties :-)</p>
+
+
+   <hr>Mijn naam is Ali Ghaffari en ik zit momenteel in mijn 4e jaar van de opleiding Bedrijfskunde aan de Hogeschool van Arnhem en Nijmegen. 
+   </p>Momenteel volg ik met veel plezier de minor “Smart Industry”. Mijn keuze voor deze minor was snel gemaakt, want zoals bekend is de ontwikkeling van technologieën zoals Robotics , IoT  in razend tempo gegaan. Steeds meer bedrijven zullen zich in de toekomst bezig houden met Smart Industry. Momenteel is er weinig bekend over het begrip Smart Industry, omdat het onderwerp aanzienlijk nieuw is. Het lijkt mij daarom interessant om me verder te verdiepen in Smart Industry en om uiteindelijk de benodigde informatie te verzamelen over de vele verschillende technologieën binnen de Smart Industry 4.0.
+   </p>
+
+<hr>
+<!-- link naar een image-->
+<a href="images/Ali Ghaffari.jpg">
+   <img src="images/Ali Ghaffari.jpg" width="350">
+</a>
+
+
+
+
+
+  <!DOCTYPE html>
+  <html>
+  <body>
+  
+    <h2>Hello World :-)</h2>
+
+  
+  
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wkqsHLrJFT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  
+  
+  </body>
+  </html>
+  
+  
+
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(13, 146, 235);
+}
+
+h1 {
+  color: rgb(243, 10, 10);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+          
+        <h1>
+            Web 2 : Het berekenen van de algoritme
+        </h1>
+        <hr>
+       
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Euklid-von-Alexandria_1.jpg/220px-Euklid-von-Alexandria_1.jpg"><br>
+        <hr>
+        <p>De berekening van de algoritme:</p>
+
+        <form>
+        <p>Input a:</p>
+        <input type="text" id="a-value" value=10>
+        <br>
+        <p>Input b:</p>
+        <input type="text" id= "b-value" value=100>
+        <br><br>
+        <input type="button" value="Bereken ggd" onclick="runFunction()">
+        <h3>De ggd van a en b is:</h3>
+        <p id='result'>type="button" value=""></p>
+        <p>Aantal iteraties: <span id="runs">....</span></p>
+        </form>
+        <script src=""></script>
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(93, 182, 241);
+}
+
+h1 {
+  color: rgb(23, 7, 161);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+
+        <h1>
+            Web 3: Hello!
+        </h1>
+        <hr>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeA7Ic-N3EMe1bklSJAY7Xy4TYgB6aSk1CcgMEijML6_jDPMg/viewform?embedded=true" width="640" height="542" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <hr>
+        <p>Stuur ons een bericht</p>
+        <form>
+        
+        <form method="post" action="a.ghaffari@student.han.nl">
+          <em>Vul je voornaam in:</em> <input type="text" size="20" maxlength="40" name="voornaam"><br>
+         
+          </form>
+
+        <form method="post" action="a.ghaffari@student.han.nl">
+          <em>Vul je bericht in:</em> <input type="text" size="20" maxlength="40" name="voornaam"><br>
+          <input type="submit" value="Verzenden">
+          </form>
+
+      
+      
+        <FORM METHOD="post" ACTION="a.ghaffari@student.han.nl">
+      
+          </FORM>
+
+       <hr>
+
+      </head>
+            
+      <body>
+        
+        <h1>Covid 19 deaths</h1>
+            
+          <div id="wrapper">
+
+            <!-- Header -->
+              <header id="header">
+                <a href="covid19.html" class="logo"> Link to Covid-19 numbers in the Netherlands </a>
+              
+              </header>
+
+          <html lang="en">
+          
+          <head>
+          
+              <meta charset="utf-8">
+              <title>Covid-19</title>
+
+           
+            
+                    <div id="land"></div>
+            
+               
+                Totale besmettingen:
+                <div id="totaleBesmettingen"></div>
+                <br>
+                Totale doden:
+                <div id="totaleDoden"></div>
+            
+                <script lang="text/javascript">
+            
+                    fetch('https://api.covid19api.com/summary')
+            
+                    .then(function (resp) { return resp.json() }) // Convert data to json
+            
+            .then(function (data) {
+            
+                console.log(data);
+            
+                console.log(data.Countries[122].Country);
+            
+                console.log(data.Countries[122].TotalDeaths);
+            
+                document.getElementById("land").innerHTML = (data.Countries[122].Country);
+                document.getElementById("datum").innerHTML = (data.Countries[122].Date);
+                document.getElementById("nieuweBesmettingen").innerHTML = (data.Countries[122].NewConfirmed);
+                document.getElementById("nieuweDoden").innerHTML = (data.Countries[122].NewDeaths);
+                document.getElementById("totaleBesmettingen").innerHTML = (data.Countries[122].TotalConfirmed);
+                document.getElementById("totaleDoden").innerHTML = (data.Countries[122].TotalDeaths);
+            })
+            
+            .catch(function () { // catch any errors
+            
+            });
+          
+        
+            
+            </header>
+
+     
+            </html>
+
+      
